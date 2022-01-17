@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+.course-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  color: rgb(48, 49, 51);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+}
+.support-info {
+  border-bottom: 1px solid #f4f4f4;
+  border-top: 1px solid #f4f4f4;
+  display: flex;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  align-items: center;
+  padding-left: 24px;
+}
+.support-info-left img {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+}
+span {
+  margin-left: 16px;
+}
+h3 {
+  color: rgb(48, 49, 51);
+  font-size: 28px;
+  font-weight: 500px;
+  line-height: 33.6px;
+  margin-block-end: 20px;
+  margin-block-start: 35px;
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+h3, p, ul , ol
+{
+    color: rgb(48, 49, 51);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-block-end: 15px;
+    margin-bottom: 15px;
+    padding-left: 24px;
+    
+}
+ul, ol{
+    padding-left: 70px;
+}
