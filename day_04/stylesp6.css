@@ -29,9 +29,9 @@
     padding-left: 24px;
   }
   .support-info-left img {
-    border-radius: 100px;
-    height: 100px;
-    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    
   }
   span {
     margin-left: 16px;
