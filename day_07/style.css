@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+     font-family: 'roboto', Arial, Helvetica, sans-serif;
+     justify-content: center;
+     background-color: pink;
+  }
+  .image {
+    background-image: url(https://khoanh24.com/uploads/w450/2021/12/06/hinh-nen-chuc-mung-nam-moi-2022-cho-dien-thoai-1_8f82140b2.jpg);
+    background-size: cover;
+    width: 650px;
+    height: 900px;
+    margin: auto;
+    position: relative;
+    transform: scale(0.8);
+  }
+  .icon {
+    margin: 43% 260px;
+    color: red;
+    font-size: 45px;
+    position: absolute;
+   
+    transform: translate(-50%,-50%);
+      animation: heart 1s ease infinite
+  }
+  @keyframes heart {
+      96% {
+          transform: translate(-50%,-50%) scale(.8,.8)
+      }
+      100% {
+          transform: translate(-50%,-50%) scale(1,1)
+      }
+  }
+  .text {
+    padding-left: 20px;
+  }
+  .text span {
+    color: yellow;
+    font-size: 40px;
+   
+    display: inline-block;
+    animation: word 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--a));
+    
+  }
+  @keyframes word {
+    0% {
+      transform: translateY(0px);
+    }
+    30% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(0px);
+    }
+  }
+  .wrap {
+    width: 350px;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .snow {
+    background-image: url(./image/image1.jpg), url(./image/image2.jpg), url(./image/image3.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    animation: tuyet 20s linear infinite;
+  }
+  @keyframes tuyet {
+      100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+      }
+  }
+  .name {
+      color: white;
+    padding-left: 23px;
+    padding-top: 20px;
+  }
+  h3 {
+    
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .name p {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .name1 {
+      color:white;
+    padding-left: 119px;
+    padding-top: 37px;
+  }
+  
