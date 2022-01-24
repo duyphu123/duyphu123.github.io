@@ -12,7 +12,7 @@ img {
   max-width: 100%;
   display: block;
   margin: auto;
- 
+  object-fit: cover;
 }
 .btn-primary:hover {
   background-color: var(--hover-primary-color);
@@ -46,20 +46,21 @@ img {
   display: flex;
 
   background-color: #e7e7e7;
-  justify-content: center;
+  
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
 }
-.nav {
-  display: flex;
-}
+
 
 .container {
   width: 100%;
 }
 
-.nav-top .nav {
-  display: flex;
-  align-items: center;
-}
 
 .content {
   display: flex;
@@ -105,6 +106,7 @@ a {
 /* nav-bot */
 
 .nav-bottom {
+  
   width: 1170px;
   height: 84px;
   margin: 0 auto;
@@ -146,15 +148,20 @@ a {
 /* slide */
 
 .slide {
-  height: 790px;
+  height: 2000px;
+  display: inline;
+  /* width: 2000px;
+  
   display: flex;
   overflow: hidden;
   background-color: #f6f6f6;
+  justify-content: center; */
+  
+  
 }
 
 .slide img {
   width: 100%;
-  height: 790px;
   object-fit: cover;
   object-position: 20% 0px;
 }
@@ -165,6 +172,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
+  padding-bottom: 30px;
 }
 
 .heading-nav {
@@ -176,8 +185,7 @@ a {
   color: #44494d;
   font-size: 40px;
   text-transform: uppercase;
-  margin-right: 48px;
-  padding-left: 900px;
+  
 }
 
 .heading-nav-list {
@@ -215,10 +223,10 @@ a {
 }
 
 .col-33 {
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 25%;
+  max-width: 25%;
 
-  padding: 0 25px;
+  padding: 0 15px;
 }
 .col-25 {
   width: 25%;
@@ -228,16 +236,21 @@ a {
 /* service */
 
 .service {
+  
   padding: 32px 0;
-
-  display: flex;
-  width: 100%;
+  width: 1250px;
+  margin: auto;
+  
+  
+  
 }
 .service-content {
+  display: flex;
+  margin: auto;
   max-width: 100%;
-  width: 100%;
-  padding-right: 105px;
-  padding-left: 105px;
+  justify-content: center;
+  
+  
 }
 
 .service-content-item {
@@ -289,6 +302,26 @@ a {
   background: url(./images/service-5.jpg) no-repeat center;
   background-size: cover;
 }
+.image6 {
+  background: url(./images/service-6.jpg) no-repeat center;
+  background-size: cover;
+}
+.image7 {
+  background: url(./images/service-7.jpg) no-repeat center;
+  background-size: cover;
+}
+.image8 {
+  background: url(./images/service-8.jpg) no-repeat center;
+  background-size: cover;
+}
+.image9 {
+  background: url(./images/service-9.jpg) no-repeat center;
+  background-size: cover;
+}
+.image10 {
+  background: url(./images/service-10.jpg) no-repeat center;
+  background-size: cover;
+}
 
 .service-content-item-text {
   position: absolute;
@@ -332,7 +365,11 @@ a {
 }
 
 /* support */
-
+.support{
+  padding: 0;
+  width: 1250px;
+  margin: auto;
+}
 .support .item {
   border: 1px solid #f1f1f1;
   border-radius: 8px;
