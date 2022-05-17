@@ -39,32 +39,39 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="container">
+        <div class="container-fluid">
           <div class="header-inner d-flex">
-            <!-- <div class="bars-icon"><i class="fa-solid fa-bars"></i></div> -->
+            <img
+              class="menu-icon"
+              src="./images/menu-icon.png"
+              alt="menu-icon"
+            />
             <a href="" class="logo">
               <img src="./images/logo.png" alt="logo" />
             </a>
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="#">Trang chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="d-flex" href="./page/menu.html">Menu </a>
-              </li>
-              <li class="nav-item">
-                <a href="./page/tintuc.html">Tin tức</a>
-              </li>
-              <li class="nav-item">
-                <a href="./page/contact.html">Bài Viết</a>
-              </li>
-              <li class="nav-item">
-                <a href="./page/about.html">Liên Hệ</a>
-              </li>
-            </ul>
+            <div class="menu d-flex">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="./index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="d-flex" href="#">Menu </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./news.html">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact.html">Bài Viết</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact.html">Liên Hệ</a>
+                </li>
+              </ul>
+            </div>
             <div class="login">
               <div class="cart">
                 <img src="./images/CartPlus.png" alt="cart" />
+                <div class="cart-quantity">0</div>
               </div>
               <div class="user-icon">
                 <img src="./images/user.png" alt="user" />
@@ -92,7 +99,10 @@
                   <p class="card-text">
                     Pizza Trứng Cút Xốt Phô Mai - Kid Mania 
                   </p>
-                  <p class="price">79.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price ">79.000 </p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -103,7 +113,10 @@
                   <p class="card-text">
                     Pizza Rau Củ Thập Cẩm 
                   </p>
-                  <p class="price">79.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price ">79.000 </p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -114,7 +127,10 @@
                   <p class="card-text">
                     Pizza Dăm Bông Dứa Kiểu Hawaii 
                   </p>
-                  <p class="price">79.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price ">79.000 </p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -125,7 +141,10 @@
                   <p class="card-text">
                     Pizza Phô Mai Hảo Hạng - Cheese Mania
                   </p>
-                  <p class="price">79.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price ">79.000 </p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -138,7 +157,10 @@
                   <p class="card-text">
                     Pizza Bò Mê-Hi-Cô Thượng Hạng - Prime Beef
                   </p>
-                  <p class="price">249.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price ">249.000 </p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -149,7 +171,10 @@
                   <p class="card-text">
                     Pizza Hải Sản Kiểu Singapore - Singapore Style Seafood
                   </p>
-                  <p class="price">249.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price ">249.000 </p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -160,7 +185,10 @@
                   <p class="card-text">
                     Pizza Gà Phô Mai Thịt Heo Xông Khói - Cheesy Chicken Bacon
                   </p>
-                  <p class="price">249.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price ">249.000 </p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -171,7 +199,10 @@
                   <p class="card-text">
                     Pizza Gà Xốt Tương Kiểu Nhật - Teriyaki Chicken
                   </p>
-                  <p class="price">249.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price ">249.000 </p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -189,55 +220,68 @@
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item" mb-4>
                   <img src="./images/my1.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body my">
+                   
                       <p class="card-text">
                         Mỳ Ý Hải Sản
                       </p>
+                    
+                    <div class="price249 d-flex">
+                      <p class="price ">89.000 </p>
+                      <p class="VND">VND</p>
                     </div>
-                    <p class="price">89.000 VND</p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item mb-4">
                   <img src="./images/my2.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body my">
+                    
                     <p class="card-text">
                       Mỳ Ý Rau Củ
                     </p>
+                  
+                  <div class="price249 d-flex">
+                    <p class="price ">89.000 </p>
+                    <p class="VND">VND</p>
                   </div>
-                    <p class="price">89.000 VND</p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item" mb-4>
                   <img src="./images/my3.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body my">
+                   
                     <p class="card-text">
                       Mỳ Ý Bò Bằm
                     </p>
+                  
+                  <div class="price249 d-flex">
+                    <p class="price ">89.000 </p>
+                    <p class="VND">VND</p>
                   </div>
-                    <p class="price">89.000 VND</p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item mb-4">
                   <img src="./images/my4.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body my">
+                   
                     <p class="card-text">
                       Mỳ Ý Thịt Viên
                     </p>
+                  
+                  <div class="price249 d-flex">
+                    <p class="price ">89.000 </p>
+                    <p class="VND">VND</p>
                   </div>
-                    <p class="price">89.000 VND</p>
                   </div>
                 </div>
               </div>
+            </div>
             </div>
 
       </section>
@@ -251,56 +295,69 @@
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item" mb-4>
                   <img src="./images/mp1.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body mon-phu">
+                   
                       <p class="card-text">
                         Cánh Gà BBQ Kiểu Mỹ (4 miếng)
                       </p>
+                  
+                    <div class="price249 d-flex">
+                      <p class="price ">89.000 </p>
+                      <p class="VND">VND</p>
                     </div>
-                    <p class="price">89.000 VND</p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item mb-4">
                   <img src="./images/mp2.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body mon-phu">
+                    
                     <p class="card-text">
                       Gà Không Xương BBQ
                     </p>
+                 
+                  <div class="price249 d-flex">
+                    <p class="price ">89.000 </p>
+                    <p class="VND">VND</p>
                   </div>
-                    <p class="price">89.000 VND</p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item" mb-4>
                   <img src="./images/mp3.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body mon-phu">
+                    
                     <p class="card-text">
                       Bánh Mì Nướng Phô Mai
                     </p>
+                  
+                  <div class="price249 d-flex">
+                    <p class="price ">89.000 </p>
+                    <p class="VND">VND</p>
                   </div>
-                    <p class="price">89.000 VND</p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item mb-4">
                   <img src="./images/mp4.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body mon-phu">
+                    
                     <p class="card-text">
                       Khoai Tây Phô Mai Đút Lò
                     </p>
+                  
+                  <div class="price249 d-flex">
+                    <p class="price ">89.000 </p>
+                    <p class="VND">VND</p>
                   </div>
-                    <p class="price">89.000 VND</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
       </section>
       <section class="product-highlight-menu">
@@ -313,56 +370,69 @@
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item" mb-4>
                   <img src="./images/du1.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body drink">
+                    
                       <p class="card-text">
                         Nước Chanh Tươi
                       </p>
+                   
+                    <div class="price249 d-flex">
+                      <p class="price ">20.000 </p>
+                      <p class="VND">VND</p>
                     </div>
-                    <p class="price">20.000 VND</p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item mb-4">
                   <img src="./images/du2.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body drink">
+                    
                     <p class="card-text">
                       Nước Cam Tươi
                     </p>
+                 
+                  <div class="price249 d-flex">
+                    <p class="price ">20.000 </p>
+                    <p class="VND">VND</p>
                   </div>
-                    <p class="price">20.000 VND</p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item" mb-4>
                   <img src="./images/du3.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body drink">
+                    
                     <p class="card-text">
                       Nước Dâu Ép
                     </p>
+                 
+                  <div class="price249 d-flex">
+                    <p class="price ">20.000 </p>
+                    <p class="VND">VND</p>
                   </div>
-                    <p class="price">20.000 VND</p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="card-item mb-4">
                   <img src="./images/du4.png" class="card-img-top" alt="PZ1" />
-                  <div class="card-body">
-                    <div class="card-text-menu">
+                  <div class="card-body drink">
+                    
                     <p class="card-text">
                       Nước Dưa Hấu Ép
                     </p>
+                  
+                  <div class="price249 d-flex">
+                    <p class="price ">20.000 </p>
+                    <p class="VND">VND</p>
                   </div>
-                    <p class="price">20.000 VND</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
       </section>
       <section class="footer">
@@ -427,6 +497,32 @@
           </div>
         </div>
       </section>
+      <div class="overlay"></div>
+      <div class="cart-side open">
+        <button type="button" class="btn-close" aria-label="Close"></button>
+        <div class="title text-center">Giỏ hàng của tôi</div>
+        <div class="cart-side2"></div>
+       
+        <div class="cart-side-bottom">
+          <a href="menu.html">Thêm món</a>
+          <div
+            class="sub-total d-flex align-items-center "
+          >
+            Tổng cộng <span>0 </span>đ
+          </div>
+          <div class="cart-side-btn text-center mt-3">
+            <a href="./thanhtoan.html" class="btn">Thanh toán</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-popup">
+        <button class="btn-close"></button>
+
+       
+      </div>
     </div>
+    <script type="module" src="/js/main.js"></script>
+    <script src="./js/main2.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

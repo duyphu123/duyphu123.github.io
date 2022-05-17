@@ -54,23 +54,23 @@
                   <a href="#">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="d-flex" href="./page/menu.html">Menu </a>
+                  <a class="d-flex" href="./menu.html">Menu </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./page/tintuc.html">Tin tức</a>
+                  <a href="./news.html">Tin tức</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./page/contact.html">Bài Viết</a>
+                  <a href="./contact.html">Bài Viết</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./page/about.html">Liên Hệ</a>
+                  <a href="./contact.html">Liên Hệ</a>
                 </li>
               </ul>
             </div>
             <div class="login">
               <div class="cart">
                 <img src="./images/CartPlus.png" alt="cart" />
-                <div class="cart-quantity"></div>
+                <div class="cart-quantity">0</div>
               </div>
               <div class="user-icon">
                 <img src="./images/user.png" alt="user" />
@@ -101,40 +101,52 @@
                   <p class="card-text">
                     Pizza Bò Mê-Hi-Cô Thượng Hạng - Prime Beef
                   </p>
-                  <p class="price">249.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price">249.000</p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div class="card-item mb-4">
+              <div class="card-item" id="1">
                 <img src="./images/PZ2.png" class="card-img-top" alt="PZ1" />
                 <div class="card-body">
                   <p class="card-text">
                     Pizza Hải Sản Kiểu Singapore - Singapore Style Seafood
                   </p>
-                  <p class="price">249.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price">249.000</p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div class="card-item" mb-4>
+              <div class="card-item">
                 <img src="./images/PZ3.png" class="card-img-top" alt="PZ1" />
                 <div class="card-body">
                   <p class="card-text">
                     Pizza Gà Phô Mai Thịt Heo Xông Khói - Cheesy Chicken Bacon
                   </p>
-                  <p class="price">249.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price">249.000</p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div class="card-item mb-4">
+              <div class="card-item">
                 <img src="./images/PZ4.png" class="card-img-top" alt="PZ1" />
                 <div class="card-body">
                   <p class="card-text">
                     Pizza Gà Xốt Tương Kiểu Nhật - Teriyaki Chicken
                   </p>
-                  <p class="price">249.000 VND</p>
+                  <div class="price249 d-flex">
+                    <p class="price">249.000</p>
+                    <p class="VND">VND</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -480,9 +492,9 @@
       </section>
 
       <div class="product-popup">
-        <div class="popup-box ">
-          <button type="button" class="btn-close" aria-label="Close"></button>
-          <div class="popup-item d-flex align-items-center">
+        <button class="btn-close"></button>
+
+        <!-- <div class="popup-item d-flex align-items-center">
               <div class="popup-image">
                   <img src="./images/PZ1.png" alt="PZ1">
               </div>
@@ -528,8 +540,7 @@
                   <div class="plus"><i class="fa-solid fa-circle-plus"></i></div>
               </div>
               <button class="btn">Thêm vào giỏ hàng : <span>249000</span> đ</button>
-          </div>
-      </div>
+          </div> -->
       </div>
       <div class="overlay"></div>
       <!-- <div class="cart-side">
@@ -543,8 +554,26 @@
           </div>
         </div>
       </div> -->
+      <div class="cart-side open">
+        <button type="button" class="btn-close" aria-label="Close"></button>
+        <div class="title text-center">Giỏ hàng của tôi</div>
+        <div class="cart-side2"></div>
+        
+        <div class="cart-side-bottom">
+          <a href="menu.html">Thêm món</a>
+          <div
+            class="sub-total d-flex align-items-center justify-content-between"
+          >
+            Tổng cộng <span>0 đ</span>
+          </div>
+          <div class="cart-side-btn text-center mt-3">
+            <a href="./thanhtoan.html" class="btn">Thanh toán</a>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="module" src="/js/main.js"></script>
     <script src="./js/main2.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
