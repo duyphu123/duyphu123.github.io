@@ -33,6 +33,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/trangchu.css" />
     <title>Vite App</title>
   </head>
   <body>
@@ -40,40 +42,46 @@
       <header>
         <div class="container-fluid">
           <div class="header-inner d-flex">
-            <img
-              class="menu-icon"
-              src="./images/menu-icon.png"
-              alt="menu-icon"
-            />
-            <a href="" class="logo">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
-            <div class="menu d-flex">
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="#">Trang chủ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="d-flex" href="./menu.html">Menu </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./news.html">Tin tức</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./contact.html">Bài Viết</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./contact.html">Liên Hệ</a>
-                </li>
-              </ul>
-            </div>
-            <div class="login">
-              <div class="cart">
-                <img src="./images/CartPlus.png" alt="cart" />
-                <div class="cart-quantity">0</div>
+            <div class="container d-flex header-fix">
+              <img
+                class="menu-icon"
+                src="./images/menu-icon.png"
+                alt="menu-icon"
+              />
+              <div class="logo">
+                <a href="">
+                  <img src="./images/logo.png" alt="logo" />
+                </a>
               </div>
-              <div class="user-icon">
-                <img src="./images/user.png" alt="user" />
+              <div class="menu d-flex">
+                <ul class="nav-list nav-list-768 nav-list-1200">
+                  <div class="container container-li d-flex">
+                    <li class="nav-item li-trang-chu">
+                      <a href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item li-menu">
+                      <a class="d-flex" href="./menu.html">Menu </a>
+                    </li>
+                    <li class="nav-item li-news">
+                      <a href="./news.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item li-baiviet">
+                      <a href="./baiviet.html">Bài Viết</a>
+                    </li>
+                    <li class="nav-item li-contact">
+                      <a href="./contact.html">Liên Hệ</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="login">
+                <div class="cart">
+                  <img src="./images/CartPlus.png" alt="cart" />
+                  <div class="cart-quantity">0</div>
+                </div>
+                <div class="user-icon">
+                  <img src="./images/user.png" alt="user" />
+                </div>
               </div>
             </div>
           </div>
@@ -152,7 +160,7 @@
             </div>
           </div>
           <div class="btn-center">
-            <button class="read-more"><p>Xem Thêm</p></button>
+            <button class="read-more" onclick="window.location.href='./menu.html'"><p>Xem Thêm</p></button>
           </div>
         </div>
       </section>
@@ -177,7 +185,7 @@
                         alt="black"
                       />
                     </div>
-                    <a class="text-menu">Xem thêm</a>
+                    <a class="text-menu" href="./menu.html">Xem thêm</a>
                   </div>
                 </div>
               </div>
@@ -199,7 +207,7 @@
                         alt="black"
                       />
                     </div>
-                    <a class="text-menu">Xem thêm</a>
+                    <a class="text-menu" href="./menu.html">Xem thêm</a>
                   </div>
                 </div>
               </div>
@@ -221,7 +229,7 @@
                         alt="black"
                       />
                     </div>
-                    <a class="text-menu">Xem thêm</a>
+                    <a class="text-menu " href="./menu.html">Xem thêm</a>
                   </div>
                 </div>
               </div>
@@ -243,14 +251,14 @@
                         alt="black"
                       />
                     </div>
-                    <a class="text-menu">Xem thêm</a>
+                    <a class="text-menu" href="./menu.html">Xem thêm</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="btn-center">
-            <button class="btn-all-menu">Toàn Bộ Thực Đơn</button>
+            <button class="btn-all-menu" onclick="window.location.href='./menu.html'" >Toàn Bộ Thực Đơn</button>
           </div>
         </div>
       </section>
@@ -273,7 +281,7 @@
               <img src="./images/line.png" alt="line" />
             </div>
           </div>
-          <div class="banner-news">
+          <!-- <div class="banner-news">
             <img src="./images/news1.png" alt="news1" />
           </div>
           <h2>
@@ -298,6 +306,47 @@
           </div>
           <div class="btn-news-all-center">
             <button class="btn-news-all">Toàn Bộ Bài Viết</button>
+          </div> -->
+          <div class="slidershow">
+            <div class="slides">
+              <input type="radio" name="bottom" id="bottom_1" checked>
+              <input type="radio" name="bottom" id="bottom_2" >
+              <input type="radio" name="bottom" id="bottom_3" >
+              <div class="slide s1">
+                <div class="text-news"><h5 class="h5-1">
+                  Lý Do Khiến Công Việc Của Người Thợ Làm Bánh Pizza Luôn Bền Vững
+                </h5>
+                <p onclick="window.location.href='./baiviet.html'">Xem thêm...</p>
+              </div>
+                <img src="./images/news1.png" alt="news1" />
+              </div>
+              <div class="slide">
+                <div class="text-news2">
+                  <h5 class="h5-slide2">
+                    Những Thông Tin Khiến Bạn Bất Ngờ Về Biểu Tượng Ẩm Thực Pizza
+                  </h5>
+                  <p onclick="window.location.href='./baiviet.html'">Xem thêm...</p>
+                </div>
+                <img src="./images/news2.png" alt="news1" />
+              </div>
+              <div class="slide">
+                <div class="text-news2">
+                  <h5 class="h5-slide2">
+                    Câu Chuyện Về Chiếc Bánh Pizza Rắc Rau Thơm
+                  </h5>
+                  <p onclick="window.location.href='./baiviet.html'">Xem thêm...</p>
+                </div>
+                <img src="./images/news3.png" alt="news1" />
+              </div>
+            </div>
+            <div class="navigation">
+              <label for="bottom_1" class="bar"></label>
+              <label for="bottom_2" class="bar"></label>
+              <label for="bottom_3" class="bar"></label>
+            </div>
+          </div>
+          <div class="btn-news-all-center">
+            <button class="btn-news-all" onclick="window.location.href='./baiviet.html'">Toàn Bộ Bài Viết</button>
           </div>
         </div>
       </section>
@@ -485,7 +534,7 @@
           </div>
           <div class="row">
             <p class="copy-right text-center">
-              © 2022 Pizza Shop. All rights reserved
+              © 2022 Pizza. All rights reserved
             </p>
           </div>
         </div>
@@ -558,17 +607,22 @@
         <button type="button" class="btn-close" aria-label="Close"></button>
         <div class="title text-center">Giỏ hàng của tôi</div>
         <div class="cart-side2"></div>
-        
+
         <div class="cart-side-bottom">
           <a href="menu.html">Thêm món</a>
           <div
             class="sub-total d-flex align-items-center justify-content-between"
           >
-            Tổng cộng <span>0 đ</span>
+            Tổng cộng <span class="last-all">0 </span>đ
           </div>
           <div class="cart-side-btn text-center mt-3">
             <a href="./thanhtoan.html" class="btn">Thanh toán</a>
           </div>
+        </div>
+        <div class="popup-delete">
+          <p>Bạn muốn xoá sản phẩm ?</p>
+          <button class="co">Có</button>
+          <button class="khong">Không</button>
         </div>
       </div>
     </div>

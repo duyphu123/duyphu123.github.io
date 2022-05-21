@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- font-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;900&family=Montserrat:wght@300;400;700;900&family=Roboto:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/thanhtoan.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container-fluid">
+          <div class="header-inner d-flex">
+            <img
+              class="menu-icon"
+              src="./images/menu-icon.png"
+              alt="menu-icon"
+            />
+            <a href="" class="logo">
+              <img src="./images/logo.png" alt="logo" />
+            </a>
+            <div class="menu d-flex">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="d-flex" href="./menu.html">Menu </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./news.html">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact.html">Bài Viết</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./page/about.html">Liên Hệ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="login">
+              <div class="cart">
+                <img src="./images/CartPlus.png" alt="cart" />
+                <div class="cart-quantity">0</div>
+              </div>
+              <div class="user-icon">
+                <img src="./images/user.png" alt="user" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container-fluid">
+        <div class="banner">
+          <img src="./images/banner.png" alt="user" />
+        </div>
+      </div>
+      <section class="thanhtoan">
+        <div class="container">
+          <h2 class="h2-heading">Thanh Toán</h2>
+          <div class="line text-center">
+            <img src="./images/line.png" alt="line" />
+          </div>
+          <div class="thanhtoan-item d-flex">
+            <div class="thanhtoan-product ">
+              <div class="thanhtoan-product-item d-flex">
+                <div class="thanhtoan-product-item1 d-flex">
+                    <p>Sản Phẩm</p>
+                  </div>
+                  <div class="thanhtoan-product-item2 d-flex">
+                    <p>Giá</p>
+                    <p>Số Lượng</p>
+                    <p>Tổng</p>
+                  </div>
+              </div>
+              <div class="thanhtoan-info">
+                <div class="cart-item-thanhtoan d-flex">
+                  <div class="cart-item-image-thanhtoan">
+                    <img src="http://127.0.0.1:5500/images/PZ5.png" alt="pz1"></div>
+                  <div class="cart-item-info-thanhtoan">
+                    <div class="name-thanhtoan">Pizza Trứng Cút Xốt Phô Mai - Kid Mania</div>
+                    <div class="size-thanhtoan d-flex align-items-center">Size S 
+                      <div class="edit-thanhtoan"><i class="fa-solid fa-pen"></i></div>
+                    </div>
+                      <div class="note-thanhtoan"></div>
+                    </div>
+                    <div class="chitiet d-flex align-items-center">
+                      <div class="cart-item-sub-price-thanhtoan d-flex">
+                        <div class="gia-thanhtoan" style="width:110px"><span>79.000</span> đ</div>
+                        <input style="width:30px;outline:none;" type="number" value="1" min="1"></div>
+                        <div class="tong"><span >79.000</span> đ</div>
+                        <div class="delete-product-thanhtoan d-flex align-items-center"><i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div>
+                    
+                  </div>
+              </div>
+            </div>
+            
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="overlay"></div>
+      <div class="cart-side open">
+        <button type="button" class="btn-close" aria-label="Close"></button>
+        <div class="title text-center">Giỏ hàng của tôi</div>
+        <div class="cart-side2"></div>
+      
+        <div class="cart-side-bottom">
+          <a href="menu.html">Thêm món</a>
+          <div
+            class="sub-total d-flex align-items-center "
+          >
+            Tổng cộng <span>0 </span>đ
+          </div>
+          <div class="cart-side-btn text-center mt-3">
+            <a href="./thanhtoan.html" class="btn">Thanh toán</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+    <script src="./js/main2.js"></script>
+    <script src="./js/thanhtoan.js"></script>
+  </body>
+</html>

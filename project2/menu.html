@@ -33,7 +33,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/menu2.css" />
     <title>Vite App</title>
   </head>
   <body>
@@ -41,40 +43,46 @@
       <header>
         <div class="container-fluid">
           <div class="header-inner d-flex">
-            <img
-              class="menu-icon"
-              src="./images/menu-icon.png"
-              alt="menu-icon"
-            />
-            <a href="" class="logo">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
-            <div class="menu d-flex">
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="./index.html">Trang chủ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="d-flex" href="#">Menu </a>
-                </li>
-                <li class="nav-item">
-                  <a href="./news.html">Tin tức</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./contact.html">Bài Viết</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./contact.html">Liên Hệ</a>
-                </li>
-              </ul>
-            </div>
-            <div class="login">
-              <div class="cart">
-                <img src="./images/CartPlus.png" alt="cart" />
-                <div class="cart-quantity">0</div>
+            <div class="container d-flex header-fix">
+              <img
+                class="menu-icon"
+                src="./images/menu-icon.png"
+                alt="menu-icon"
+              />
+              <div class="logo">
+                <a href="">
+                  <img src="./images/logo.png" alt="logo" />
+                </a>
               </div>
-              <div class="user-icon">
-                <img src="./images/user.png" alt="user" />
+              <div class="menu d-flex">
+                <ul class="nav-list nav-list-768 nav-list-1200">
+                  <div class="container container-li d-flex">
+                    <li class="nav-item li-trang-chu">
+                      <a href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item li-menu">
+                      <a class="d-flex" href="#">Menu </a>
+                    </li>
+                    <li class="nav-item li-news">
+                      <a href="./news.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item li-baiviet">
+                      <a href="./baiviet.html">Bài Viết</a>
+                    </li>
+                    <li class="nav-item li-contact">
+                      <a href="./contact.html">Liên Hệ</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="login">
+                <div class="cart">
+                  <img src="./images/CartPlus.png" alt="cart" />
+                  <div class="cart-quantity">0</div>
+                </div>
+                <div class="user-icon">
+                  <img src="./images/user.png" alt="user" />
+                </div>
               </div>
             </div>
           </div>
@@ -274,15 +282,15 @@
                       Mỳ Ý Thịt Viên
                     </p>
                   
-                  <div class="price249 d-flex">
-                    <p class="price ">89.000 </p>
-                    <p class="VND">VND</p>
-                  </div>
+                    <div class="price249 d-flex">
+                      <p class="price ">89.000 </p>
+                      <p class="VND">VND</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
+          </div>
 
       </section>
       <section class="product-highlight-menu">
@@ -502,17 +510,22 @@
         <button type="button" class="btn-close" aria-label="Close"></button>
         <div class="title text-center">Giỏ hàng của tôi</div>
         <div class="cart-side2"></div>
-       
+
         <div class="cart-side-bottom">
           <a href="menu.html">Thêm món</a>
           <div
-            class="sub-total d-flex align-items-center "
+            class="sub-total d-flex align-items-center justify-content-between"
           >
-            Tổng cộng <span>0 </span>đ
+            Tổng cộng <span class="last-all">0 </span>đ
           </div>
           <div class="cart-side-btn text-center mt-3">
             <a href="./thanhtoan.html" class="btn">Thanh toán</a>
           </div>
+        </div>
+        <div class="popup-delete">
+          <p>Bạn muốn xoá sản phẩm ?</p>
+          <button class="co">Có</button>
+          <button class="khong">Không</button>
         </div>
       </div>
       <div class="product-popup">

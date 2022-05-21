@@ -1,0 +1,91 @@
+.thanhtoan-item{
+    margin-top: 55px;
+}
+.thanhtoan-product {
+  width: 746px;
+  height: 390px;
+}
+.thanhtoan-product-item{
+    width: 746px;
+    height: 32px;
+    border-bottom: 1px solid #000000;
+    
+   
+}
+.thanhtoan-product-item1 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-left: 135px;
+  margin-right: 200px;
+  width: 92px;
+}
+.thanhtoan-product-item2{
+  width: 268px;
+}
+.thanhtoan-product-item2 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-right: 50px;
+  width: 30px;
+}
+.thanhtoan-product-item2 p:nth-child(2){
+  width: 82px;
+}
+.thanhtoan-product-item2 p:last-child{
+  margin-right: 0px;
+  width: 46px;
+}
+.cart-item-image-thanhtoan {
+  width: 60px;
+  height: 60px;
+}
+.cart-item-info-thanhtoan {
+  padding-left: 8px;
+  width: 280px;
+  font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+white-space: nowrap;
+overflow: hidden;
+  text-overflow: ellipsis;
+
+
+color: #000000;
+}
+.thanhtoan-info{
+  border-bottom: 1px solid #000000;
+}
+.cart-item-thanhtoan{
+  margin-top: 15px;
+}
+.chitiet{
+  margin-left: 50px;
+}
+input{
+  margin-left: 35px;
+}
+.gia-thanhtoan{
+  font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #C00A2D;
+}
+.tong{
+  margin-left: 58px;
+  font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #C00A2D;
+
+}
+.delete-product-thanhtoan{
+  margin-left: 15px;
+}

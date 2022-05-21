@@ -34,49 +34,55 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/news.css" />
+    <link rel="stylesheet" href="./css/header.css" />
 
     <title>Vite App</title>
-   
   </head>
   <body>
     <div class="wrapper">
       <header>
         <div class="container-fluid">
           <div class="header-inner d-flex">
-            <img
-              class="menu-icon"
-              src="./images/menu-icon.png"
-              alt="menu-icon"
-            />
-            <a href="" class="logo">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
-            <div class="menu d-flex">
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="./index.html">Trang chủ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="d-flex" href="./menu.html">Menu </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#">Tin tức</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./contact.html">Bài Viết</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./contact.html">Liên Hệ</a>
-                </li>
-              </ul>
-            </div>
-            <div class="login">
-              <div class="cart">
-                <img src="./images/CartPlus.png" alt="cart" />
-                <div class="cart-quantity">0</div>
+            <div class="container d-flex header-fix">
+              <img
+                class="menu-icon"
+                src="./images/menu-icon.png"
+                alt="menu-icon"
+              />
+              <div class="logo">
+                <a href="">
+                  <img src="./images/logo.png" alt="logo" />
+                </a>
               </div>
-              <div class="user-icon">
-                <img src="./images/user.png" alt="user" />
+              <div class="menu d-flex">
+                <ul class="nav-list nav-list-768 nav-list-1200">
+                  <div class="container container-li d-flex">
+                    <li class="nav-item li-trang-chu">
+                      <a href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item li-menu">
+                      <a class="d-flex" href="./menu.html">Menu </a>
+                    </li>
+                    <li class="nav-item li-news">
+                      <a href="#">Tin tức</a>
+                    </li>
+                    <li class="nav-item li-baiviet">
+                      <a href="./baiviet.html">Bài Viết</a>
+                    </li>
+                    <li class="nav-item li-contact">
+                      <a href="./contact.html">Liên Hệ</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="login">
+                <div class="cart">
+                  <img src="./images/CartPlus.png" alt="cart" />
+                  <div class="cart-quantity">0</div>
+                </div>
+                <div class="user-icon">
+                  <img src="./images/user.png" alt="user" />
+                </div>
               </div>
             </div>
           </div>
@@ -93,6 +99,7 @@
           <div class="line text-center">
             <img src="./images/line.png" alt="line" />
           </div>
+         <div class="fix-news">
           <div class="news2 d-flex news3">
             <div class="news-item">
               <img src="./images/news-img-1.png" alt="news1" />
@@ -111,7 +118,7 @@
                       alt="black"
                     />
                   </div>
-                  <div class="news-info-text">
+                  <div class="news-info-text news-info-text-km1 ">
                     <p>
                       * Mua Pizza size M hoặc L kèm nước uống nguyên giá được
                       giảm 70% cho bánh Pizza thứ 2 cùng size có giá bằng hoặc
@@ -145,7 +152,7 @@
                       alt="black"
                     />
                   </div>
-                  <div class="news-info-text">
+                  <div class="news-info-text news-info-text-km2">
                     <p>
                       * Giá: 89K/pizza dòng Favorite (size M). Thêm 30K/pizza và
                       60K/pizza để nâng lên dòng Premium và Signature.
@@ -224,6 +231,7 @@
               </div>
             </div>
           </div>
+         </div>
         </div>
       </section>
       <section class="footer">
@@ -289,5 +297,7 @@
         </div>
       </section>
     </div>
+    <script type="module" src="/js/main.js"></script>
+    <script src="./js/main2.js"></script>
   </body>
 </html>
