@@ -60,7 +60,14 @@ function addcart(productImg, productName, productPrice) {
 
   popupNew.append(addDiv);
 
-
+  var storageKey='todoList';
+  var dataString= localStorage.getItem(storageKey);
+  var todoList;
+  if (dataString){
+    todoList=JSON.parse(dataString);
+  }else{
+    todoList=[]
+  }
   const btnAdd = document.querySelectorAll(".btnadd");
 
   btnAdd.forEach(function (button, index) {
@@ -78,7 +85,7 @@ function addcart(productImg, productName, productPrice) {
           
 
         addcartItem(productItemAddImg, productItemAddName, productItemAddPrice);
-        
+        localStorage.setItem(storageKey, JSON.stringify(todoList))
         
       }
     });
@@ -245,6 +252,19 @@ overlayOpen.addEventListener("click", function () {
   }
 });
 
+var offset = 500;
+
+var duration = 50;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
 //Render lại giao diện
 
 //     cartHide()
