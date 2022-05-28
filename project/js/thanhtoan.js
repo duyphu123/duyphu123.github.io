@@ -298,12 +298,23 @@ const changeTotalProduct = (id, event) => {
 };
 
 const deleteProduct = (id) => {
-  for (let i = 0; i < products.length; i++) {
-    if (products[i].id == id) {
-      products.splice(i, 1);
+  const popupDel = document.querySelector(".popup-delete-thanhtoan");
+
+  popupDel.style.display = "block";
+  const Ok = document.querySelector(".co");
+  const No = document.querySelector(".khong");
+  Ok.addEventListener("click", function () {
+    for (let i = 0; i < products.length; i++) {
+      if (products[i].id == id) {
+        products.splice(i, 1);
+      }
     }
-  }
-  renderProduct(products);
+    popupDel.style.display = "none";
+    renderProduct(products);
+  });
+  No.addEventListener("click", function () {
+    popupDel.style.display = "none";
+  });
 };
 
 const numberFormater = new Intl.NumberFormat("de-DE");
