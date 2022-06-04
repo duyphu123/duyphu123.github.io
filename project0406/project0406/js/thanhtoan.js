@@ -616,7 +616,8 @@ confirm1.addEventListener("click", async function () {
     btnDathang2.innerHTML = "Thay Đổi Thông Tin";
     alert("Bạn Đã Đặt Hàng Thành Công.Xin Cảm Ơn");
     overlayOpen.style.display = "none";
-    
+    location.assign("./menu.html#menu-pizza");
+
   });
  
 })
