@@ -153,19 +153,36 @@ function addcartItem(productItemAddImg, productItemAddName, productItemAddPrice,
   var soluong = document.querySelector(".cart-quantity");
   soluong.innerHTML = cartProduct.length;
   var number = document.getElementById("number");
+  var number = document.querySelectorAll("#number");
+ 
+  for (i = 0; i < cartProduct.length; i++) {
+    
+
+    // Listen for input event on numInput.
+    number[i].onkeydown = function (e) {
+      if (
+        !(
+          (e.keyCode > 95 && e.keyCode < 106) ||
+          (e.keyCode > 47 && e.keyCode < 58) ||
+          e.keyCode == 8
+        )
+      ) {
+        return false;
+      }
+  }};
 
   // Listen for input event on numInput.
-  number.onkeydown = function (e) {
-    if (
-      !(
-        (e.keyCode > 95 && e.keyCode < 106) ||
-        (e.keyCode > 47 && e.keyCode < 58) ||
-        e.keyCode == 8
-      )
-    ) {
-      return false;
-    }
-  };
+  // number.onkeydown = function (e) {
+  //   if (
+  //     !(
+  //       (e.keyCode > 95 && e.keyCode < 106) ||
+  //       (e.keyCode > 47 && e.keyCode < 58) ||
+  //       e.keyCode == 8
+  //     )
+  //   ) {
+  //     return false;
+  //   }
+  // };
   const content=document.querySelectorAll(".cart-item")
   const note=document.querySelectorAll(".book1")
   const note2=document.querySelectorAll(".book2")

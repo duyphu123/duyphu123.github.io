@@ -151,23 +151,27 @@ const renderProduct = (arr) => {
     </div>
   </div>`;
   }
-  const input1=document.querySelector(".input1")
-  input1.onkeydown = function (e) {
-    if (
-      !(
-        (e.keyCode > 95 && e.keyCode < 106) ||
-        (e.keyCode > 47 && e.keyCode < 58) ||
-        e.keyCode == 8
-      )
-      
-    ) 
-    {
-      return false;
+  var cartProduct = document.querySelectorAll(".cart-item-thanhtoan");
+  for (i = 0; i < cartProduct.length; i++) {
+    const input1=document.querySelectorAll(".input1")
+    input1[i].onkeydown = function (e) {
+      if (
+        !(
+          (e.keyCode > 95 && e.keyCode < 106) ||
+          (e.keyCode > 47 && e.keyCode < 58) ||
+          e.keyCode == 8
+        )
+        
+      ) 
+      {
+        return false;
+      }
+    
+    };
+    if (input1[i].value==""){
+      alert("Bạn phải nhập vào số lượng")
     }
-  
-  };
-  if (input1.value==""){
-    alert("Bạn phải nhập vào số lượng")
+
   }
  
   const btnSize = document.querySelectorAll(".btn");
