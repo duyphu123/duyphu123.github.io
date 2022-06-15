@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="Root"></div>
+    <script type="text/babel">
+    const styles = {
+        headerPage: {
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          margin: "10px 20px 8px 20px",
+          height: "70px",
+          borderBottom: "1px solid #000000",
+        },
+        logo: {
+          width: "140px",
+        },
+
+        search: {
+          display: "flex",
+        },
+
+        input: {
+          position: "relative",
+        },
+
+        imgInput: {
+          position: "absolute",
+          top: "10px",
+          right: "10px",
+        },
+
+        inputHeader: {
+          width: "500px",
+          padding: "10px",
+          border: "1px solid #000000",
+        },
+
+        box: {
+          backgroundColor: "#F5F5F5",
+          padding: "10px 20px",
+          height: "15px",
+          borderRadius: "0px 2px 2px 0px",
+          border: "1px solid #C0C0C0",
+          borderLeft: "none",
+        },
+
+        mic: {
+          backgroundColor: "#F5F5F5",
+          height: "18px",
+          borderRadius: "50px",
+          padding: "10px 14px",
+          marginLeft: "10px",
+        },
+        icon: {
+          display: "flex",
+          alignItems: "center",
+        },
+
+        iconHeader: {
+          display: "flex",
+        },
+
+        iconHeader: {
+          fontSize: "20px",
+          paddingRight: "20px",
+        },
+
+        imgIcon: {
+          alignItems: "center",
+          width: "32px",
+          borderRadius: "50px",
+        },
+
+        list: {
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+        },
+
+        listItem: {
+          backgroundColor: "#F5F5F5",
+          fontSize: "16px",
+          fontFamily: "Roboto, sans-serif",
+          padding: "8px 16px",
+          borderRadius: "20px",
+          border: "1px solid #DCDCDC",
+          margin: "8px",
+          textAlign: "center",
+        },
+
+        content: {
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          margin: "10px 20px 8px 20px",
+          backgroundColor: "#F5F5F5",
+          borderTop: "1px solid #000000",
+        },
+
+        card: {
+          width: "22%",
+          marginRight: "30px",
+        },
+
+        imgContent: {
+          width: "100%",
+          paddingTop: "20px",
+        },
+
+        itemTittle: {
+          fontSize: "16px",
+          fontFamily: "Roboto, sans-serif",
+          fontWeight: "500",
+        },
+
+        itemChannel: {
+          fontSize: "14px",
+          fontFamily: "Roboto, sans-serif",
+          fontWeight: "400",
+          color: "#696969",
+        },
+       
+      };
+
+      function Header() {
+        return (
+          <div className="header-page" style={styles.headerPage}>
+            <img
+              src="https://vudigital.co/wp-content/uploads/2021/12/you-tube-2017-seeklogo.com-4-01.png"
+              style={styles.logo}
+              alt="logo-youtube"
+            />
+
+            <div className="search" style={styles.search}>
+              <div className="input" style={styles.input}>
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm"
+                  style={styles.inputHeader}
+                />
+                <img
+                  src="https://www.gstatic.com/inputtools/images/tia.png"
+                  style={styles.imgInput}
+                  alt="img"
+                />
+              </div>
+
+              <div className="box" style={styles.box}>
+                <i
+                  className="fa-solid fa-magnifying-glass"
+                  style={styles.iconSearch}
+                ></i>
+              </div>
+              <i className="fa-solid fa-microphone" style={styles.mic}></i>
+            </div>
+
+            <div className="icon" style={styles.icon}>
+              <i className="fa-solid fa-video" style={styles.iconHeader}></i>
+              <i className="fa-solid fa-braille" style={styles.iconHeader}></i>
+              <i className="fa-solid fa-bell" style={styles.iconHeader}></i>
+              <img
+                src="https://scontent.fhan4-3.fna.fbcdn.net/v/t1.18169-9/12346480_449877495204978_5580306343020624804_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=1XgZiZwjsmsAX-oX9Dq&_nc_ht=scontent.fhan4-3.fna&oh=00_AT9Vx0BtbtTl6-ZvO2Gmvg3jAd-NdkuPNOTT6RB8wkJ8iQ&oe=62CE77FF"
+                style={styles.imgIcon}
+                alt="img"
+              />
+            </div>
+          </div>
+        );
+      }
+
+      const suggestList = [
+        "Tất Cả",
+        "Âm Nhạc",
+        "Danh Sách Két Hợp",
+        "Trực Tiếp",
+        "Trò Chơi",
+        "Bóng Đá",
+        "Đọc Rap",
+        "Phim Hoạt Hình",
+        "Mới Tải Lên Gần Đây",
+        "Đã Xem",
+        "Đề Xuất Mới",
+      ];
+
+      function Suggest({ contentList }) {
+        return <span style={styles.listItem}>{contentList}</span>;
+      }
+
+     
+        </script>
+</body>
+</html>
